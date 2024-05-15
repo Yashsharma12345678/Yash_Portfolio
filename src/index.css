@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "MarlinGeoSQ-bold";
+    src: url("../public/MarlinGeoSQ-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "MarlinGeoSQ-light";
+    src: url("../public/MarlinGeoSQ-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @layer components {
+    
+    .btn{ 
+        @apply py-3 px-3 sm:px-7 m-4 text-lg text-blue-700 border  border-gray-500 bg-[#0C0E10] rounded-md cursor-pointer transition transform duration-200 ease-out hover:bg-gray-900
+    }
+    .drawer{
+        @apply w-7 h-6 text-center rounded-md hover:border border-blue-900 hover:bg-[#1f2122] text-white
+    }
+    .logo{
+        @apply w-8 m-2 pt-2 pb-1 px-1  hover:border border-blue-900 hover:bg-[#1f2122]  transition transform duration-200 ease-out
+    }
+    .text{
+        @apply hover:text-[#000000] transform transition-transform hover:animate-ping
+    }
+    .input{ 
+        @apply py-3  placeholder:text-[#9ca3af]  outline-none px-3 sm:px-7 mt-14 sm:m-2 text-base text-white w-full border-b  border-gray-500 bg-[#0C0E10] rounded-md transition transform duration-200 ease-out hover:bg-gray-900
+    }
+
+    .htmltext{
+        @apply text-gray-600 text-sm
+    }
+    .aboutLogos{
+        @apply flex cursor-pointer text-white space-x-5 pl-2 pr-2 mt-3 pb-2 pt-1 border border-[#028fba] rounded-xl hover:bg-[#028fba] transition duration-500 transform ease-out
+    }
+    .aboutbtn{ 
+        @apply py-3 px-3 sm:px-7 mt-6 text-lg text-[white] border  border-white  rounded-md cursor-pointer transition transform duration-200 ease-out hover:bg-[#028fba] hover:text-white
+    }
+}
