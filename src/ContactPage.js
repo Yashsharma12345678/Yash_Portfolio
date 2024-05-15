@@ -142,7 +142,7 @@ const ContactPage = () => {
             <p className=" text-[#9ca3af] text-lg font-marlinGeoSQlight">
               Get in touch{" "}
             </p>
-            <p className="text-[bfbfc6] text-3xl sm:text-5xl font-marlinGeoSQBold">
+            <p className="text-[bfbfc6] text-3xl  sm:text-[40px] font-marlinGeoSQBold">
               yash2722003@gmail.com
             </p>
             <p className=" text-[#9ca3af] text-base mt-3 font-marlinGeoSQlight">

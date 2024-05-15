@@ -350,12 +350,12 @@ const SixthSection = ({ setProjectHover, projectHover }) => {
       </div>
 
       {isModalOpen && (
-        <div className="fixed top-0 left-0 flex items-center justify-center z-30 backdrop-filter backdrop-blur-md bg-opacity-5 w-screen h-screen">
+        <div className="fixed top-0 left-0 flex items-center justify-center z-50 backdrop-filter backdrop-blur-md bg-opacity-5 w-screen h-screen">
           <div
             ref={modalRef}
             className=" z-50 rounded-3xl w-[90%] sm:w-[80%] md:w-[43%] h-[80%] sm:h-[90%] flex-col space-y-2 items-center justify-start bg-black"
           >
-            <div className=" h-[45%]  rounded-t-xl ">
+            <div className=" h-[45%] rounded-t-xl ">
               {currentProject.status == "App" ? (
                 <div className=" grid grid-cols-2 gap-4  h-full">
                   {currentProject.Image.map((image, index) => {
@@ -379,7 +379,7 @@ const SixthSection = ({ setProjectHover, projectHover }) => {
                 <div className=" relative">
                   <div className=" w-full h-full absolute bg-gradient-to-b from-transparent to-black/70" />
                   <img
-                    className=" w-full h-full rounded-t-xl "
+                    className=" w-full object-cover h-full rounded-t-xl "
                     src={`./Images/${currentProject.Image}`}
                   />
                   <button

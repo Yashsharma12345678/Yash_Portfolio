@@ -141,7 +141,7 @@ function App() {
         )}
         {isClicked ? (
           <div className=" h-full w-full flex flex-col justify-between">
-            <div className=" h-[50%] list-none pl-[10%] pt-[25%] flex flex-col">
+            <div className=" h-[55%] list-none pl-[10%] pt-[25%] flex flex-col">
               {menuIcons.map((item, index) => {
                 return (
                   <RevealComponent>
@@ -149,7 +149,7 @@ function App() {
                       onMouseOver={() => setHoveredIndexes(index)}
                       onMouseOut={() => setHoveredIndexes(-1)}
                       onClick={() => scrollToRef(sectionRefs[index])}
-                      className="text-5xl font-marlinGeoSQlight py-1 flex items-center space-x-3"
+                      className="text-5xl w-fit h-fit font-marlinGeoSQlight my-1 flex items-center space-x-3"
                       style={{
                         transition: "transform 0.4s ease-in-out",
                         transform:
@@ -163,7 +163,7 @@ function App() {
                           <IoArrowForward className=" text-black" />
                         </span>
                       )}
-                      <span className=" text-5xl font-marlinGeoSQlight py-1">
+                      <span className=" text-3xl sm:text-5xl  font-marlinGeoSQlight ">
                         {item}
                       </span>
                     </li>
