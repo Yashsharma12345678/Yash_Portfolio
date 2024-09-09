@@ -31,10 +31,9 @@ function App() {
 
   const scrollToRef = (ref) => {
     if (ref && ref.current) {
-      ref.current.scrollIntoView({behavior: "smooth", block: "start" });
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
-  
 
   const sectionRefs = [
     firstSectionRef,
@@ -175,8 +174,8 @@ function App() {
               <RevealComponent>
                 <div>
                   <a
-                    // href="https://www.linkedin.com/in/yashsharma2723/"
-                    // target="_blank"
+                  // href="https://www.linkedin.com/in/yashsharma2723/"
+                  // target="_blank"
                   >
                     <p>Twitter</p>
                   </a>
@@ -197,7 +196,9 @@ function App() {
                     <p>Github</p>
                   </a>
 
-                  <p>Resume</p>
+                  <a href="/Yash_res.pdf" target="_blank">
+                    <p>Resume</p>
+                  </a>
                 </div>
               </RevealComponent>
             </div>
@@ -212,10 +213,8 @@ function App() {
           className=""
           // style={{ backgroundImage: `url(${require("./1.png")})` }}
           ref={firstSectionRef}
-          
         >
-          <FirstSection sectionRefs={sectionRefs}
-  scrollToRef={scrollToRef}  />
+          <FirstSection sectionRefs={sectionRefs} scrollToRef={scrollToRef} />
         </div>
 
         <div className=" relative" ref={secondSectionRef}>
@@ -249,8 +248,7 @@ function App() {
           <div className=" absolute top-[60%] right-0">
             <img className=" opacity-30" src="./Images/2.png" />
           </div>
-          <HelpComponent sectionRefs={sectionRefs}
-  scrollToRef={scrollToRef}   />
+          <HelpComponent sectionRefs={sectionRefs} scrollToRef={scrollToRef} />
         </div>
         {/* 6th section */}
         <div ref={projectsSectionRef}>

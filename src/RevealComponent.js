@@ -8,6 +8,7 @@ const RevealComponent = ({ children }) => {
 
   const maincontrols = useAnimation()
 
+
   useEffect(() => {
     if(isInview){
       maincontrols.start("visible")
@@ -30,7 +31,6 @@ const RevealComponent = ({ children }) => {
       animate={maincontrols}
       transition={{ duration: 0.5, delay: 0.25 }}
     >
-
       {children}
     </motion.div>
     </div>
